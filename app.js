@@ -2,10 +2,14 @@
 
 var app = express();
 
-const hello = (req,res) => res.send('Hello World!');
+const bootstrap = require('./src/bootstrap');
 
-const listener = () => console.log('Example app listening on port 3000!');
+const route = express.Router();
+app.use(route);
 
-app.get('/hello', hello);
+bootstrap(app, route);
+
+const listener = () => console.log('Listening on port 3000');
+
 
 app.listen(3000, listener);
