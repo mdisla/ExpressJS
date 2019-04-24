@@ -1,11 +1,9 @@
-helloController = require("../controllers/helloController");
-homeController = require("../controllers/homeController");
-byeController = require("../controllers/byeController");
+messageController = require("../controllers/messageController");
 
 exports.appRoute = router => {
-    router.get("/hello", helloController.getHelloController);
+    
+    router.get("/", messageController.getMessageController);
+    router.get("/hello", messageController.getMessageController);
+    router.get("/bye", messageController.getMessageController);
 
-    router.get("/", homeController.getHomeController);
-
-    router.get("/bye", byeController.getByeController);
 };

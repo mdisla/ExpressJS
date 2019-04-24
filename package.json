@@ -10,12 +10,10 @@
     "name": "MDISLA"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "cookie-parser": "^1.4.4",
     "debug": "^2.6.9",
     "express": "^4.16.4",
-    "morgan": "^1.9.1",
-    "pug": "^2.0.3",
-    "serve-favicon": "^2.5.0"
+    "pg": "^7.10.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.7.1"
   }
 }

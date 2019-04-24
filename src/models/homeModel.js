@@ -1,5 +1,5 @@
-const rootMSG = "Home";
+const homeMSG = "Home";
 
 exports.getHome = () => {
-    return rootMSG;
+    return homeMSG;
 };
